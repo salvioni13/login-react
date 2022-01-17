@@ -42,8 +42,7 @@ h2 {
   flex-direction: column;
   justify-content: center !important;
   width: 100%;
-  min-height: 100%;
-  padding: 20px;
+  min-height: 100vh;
 }
 
 #formContent {

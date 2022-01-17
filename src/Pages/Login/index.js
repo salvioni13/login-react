@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
 import { loginUser, useAuthState, useAuthDispatch } from "../../Context";
-import styles from "./login.module.css";
+// import styles from "./login.module.css";
 
 import "../assets/css/acesso.css";
 
@@ -32,9 +31,9 @@ function Login(props) {
   };
 
   return (
-    <div className="wrapper bg-white fadeInDown">
-      <div id="formContent">
-        <div id="pos" className="fadeIn first">
+    <div className="wrapper text-center align-self-center bg-white fadeInDown">
+      <div id="formContent" className="mx-auto">
+        <div id="pos" className=" fadeIn first">
           <img
             src="https://cdn.discordapp.com/attachments/903648633851871266/930798924325851136/user.png"
             id="icon"
@@ -73,7 +72,7 @@ function Login(props) {
             value="Log In"
           />
         </form>
-        {errorMessage ? <p className={styles.error}>{errorMessage}</p> : null}
+        {errorMessage ? <p className="error">{errorMessage}</p> : null}
         <div id="formFooter">
           <a className="underlineHover" href="DadosCadastrarUsuario">
             Solicitar Acesso
